@@ -1,16 +1,7 @@
-<!DOCTYPE html>
+import React from 'react'
 
-<html lang="en" dir="ltr">
-
-  <head>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <meta charset="utf-8">
-    <title>Shop Me</title>
-  </head>
-
-  <body>
-
+function App() {
+  return (
     <div class="grid-container">
 
       <header class="row">
@@ -29,8 +20,7 @@
           <div class="card">
 
             <a href="product.html">
-              <!-- image size: 680px by 830px -->
-              <img class="medium" src="./images/product-1.png" alt="product">
+              <img class="medium" src="./images/product-1.png" alt="product"/>
             </a>
 
             <div class="card-body">
@@ -55,8 +45,7 @@
             <div class="card">
 
               <a href="product.html">
-                <!-- image size: 680px by 830px -->
-                <img class="medium" src="./images/product-1.png" alt="product">
+                <img class="medium" src="./images/product-1.png" alt="product"/>
               </a>
 
               <div class="card-body">
@@ -81,8 +70,7 @@
               <div class="card">
 
                 <a href="product.html">
-                  <!-- image size: 680px by 830px -->
-                  <img class="medium" src="./images/product-1.png" alt="product">
+                  <img class="medium" src="./images/product-1.png" alt="product"/>
                 </a>
 
                 <div class="card-body">
@@ -107,8 +95,7 @@
                 <div class="card">
 
                   <a href="product.html">
-                    <!-- image size: 680px by 830px -->
-                    <img class="medium" src="./images/product-1.png" alt="product">
+                    <img class="medium" src="./images/product-1.png" alt="product"/>
                   </a>
 
                   <div class="card-body">
@@ -133,8 +120,7 @@
                   <div class="card">
 
                     <a href="product.html">
-                      <!-- image size: 680px by 830px -->
-                      <img class="medium" src="./images/product-1.png" alt="product">
+                      <img class="medium" src="./images/product-1.png" alt="product"/>
                     </a>
 
                     <div class="card-body">
@@ -159,8 +145,7 @@
                     <div class="card">
 
                       <a href="product.html">
-                        <!-- image size: 680px by 830px -->
-                        <img class="medium" src="./images/product-1.png" alt="product">
+                        <img class="medium" src="./images/product-1.png" alt="product"/>
                       </a>
 
                       <div class="card-body">
@@ -188,6 +173,7 @@
       <footer class="row center">Made with Love ❤️</footer>
 
     </div>
+  );
+}
 
-  </body>
-</html>
+export default App;
