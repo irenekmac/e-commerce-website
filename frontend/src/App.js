@@ -2,13 +2,13 @@ import React from 'react'
 
 function App() {
   return (
-    <div class="grid-container">
+    <div className="grid-container">
 
-      <header class="row">
-        <div class="">
-          <a class="brand" href="index.html">ShopMe</a>
+      <header className="row">
+        <div className="">
+          <a className="brand" href="index.html">ShopMe</a>
         </div>
-        <div class="">
+        <div className="">
           <a href="cart.html">Cart</a>
           <a href="signin.html">Sign-in</a>
         </div>
@@ -16,161 +16,19 @@ function App() {
 
       <main>
 
-        <div class="row center">
-          <div class="card">
+        <div className="row center">
 
-            <a href="product.html">
-              <img class="medium" src="./images/product-1.png" alt="product"/>
-            </a>
+          {
+            data.products.map(product => (
 
-            <div class="card-body">
-              <a href="product.html">
-                <h2>Rainbow Rug</h2>
-              </a>
+            ));
+          }
 
-              <div class="rating">
-                <span><i class="fa fa-star"></i></span>
-                <span><i class="fa fa-star"></i></span>
-                <span><i class="fa fa-star"></i></span>
-                <span><i class="fa fa-star"></i></span>
-                <span><i class="fa fa-star"></i></span>
-
-              </div>
-
-              <div class="price">$16,000</div>
-
-              </div>
-            </div>
-
-            <div class="card">
-
-              <a href="product.html">
-                <img class="medium" src="./images/product-1.png" alt="product"/>
-              </a>
-
-              <div class="card-body">
-                <a href="product.html">
-                  <h2>Rainbow Rug</h2>
-                </a>
-
-                <div class="rating">
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-
-                </div>
-
-                <div class="price">$16,000</div>
-
-                </div>
-              </div>
-
-              <div class="card">
-
-                <a href="product.html">
-                  <img class="medium" src="./images/product-1.png" alt="product"/>
-                </a>
-
-                <div class="card-body">
-                  <a href="product.html">
-                    <h2>Rainbow Rug</h2>
-                  </a>
-
-                  <div class="rating">
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-
-                  </div>
-
-                  <div class="price">$16,000</div>
-
-                  </div>
-                </div>
-
-                <div class="card">
-
-                  <a href="product.html">
-                    <img class="medium" src="./images/product-1.png" alt="product"/>
-                  </a>
-
-                  <div class="card-body">
-                    <a href="product.html">
-                      <h2>Rainbow Rug</h2>
-                    </a>
-
-                    <div class="rating">
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-
-                    </div>
-
-                    <div class="price">$16,000</div>
-
-                    </div>
-                  </div>
-
-                  <div class="card">
-
-                    <a href="product.html">
-                      <img class="medium" src="./images/product-1.png" alt="product"/>
-                    </a>
-
-                    <div class="card-body">
-                      <a href="product.html">
-                        <h2>Rainbow Rug</h2>
-                      </a>
-
-                      <div class="rating">
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-
-                      </div>
-
-                      <div class="price">$16,000</div>
-
-                      </div>
-                    </div>
-
-                    <div class="card">
-
-                      <a href="product.html">
-                        <img class="medium" src="./images/product-1.png" alt="product"/>
-                      </a>
-
-                      <div class="card-body">
-                        <a href="product.html">
-                          <h2>Rainbow Rug</h2>
-                        </a>
-
-                        <div class="rating">
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star-half-o"></i></span>
-
-                        </div>
-
-                        <div class="price">$16,000</div>
-
-                        </div>
-                      </div>
           </div>
 
         </main>
 
-      <footer class="row center">Made with Love ❤️</footer>
+      <footer className="row center">Made with Love ❤️</footer>
 
     </div>
   );
