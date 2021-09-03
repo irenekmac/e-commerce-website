@@ -7,11 +7,12 @@ function App() {
 
       <header className="row">
         <div className="">
-          <a className="brand" href="index.html">ShopMe</a>
+          <a className="brand" href="/">ShopMe</a>
         </div>
+
         <div className="">
-          <a href="cart.html">Cart</a>
-          <a href="signin.html">Sign-in</a>
+          <a href="/cart">Cart</a>
+          <a href="/signin">Sign-in</a>
         </div>
       </header>
 
@@ -20,8 +21,8 @@ function App() {
         <div>
 
           <div className="row center">
-
             {data.products.map((product) => (
+              <Product product={product}
 
               <div key={product._id} className="card">
 
