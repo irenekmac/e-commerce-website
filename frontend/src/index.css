@@ -38,6 +38,7 @@ footer {
   background-color: #203040;
   color: #ffffff;
 }
+
 /* Common */
 h1 {
   font-size: 1.8rem;
@@ -64,6 +65,29 @@ ul {
 
 li {
   margin-top: 1rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 0.1rem #404040 solid;
+}
+
+button.primary {
+  background-color: f0c040;
+}
+
+button.block {
+  width: 100%;
 }
 
 /* Header */
@@ -110,6 +134,10 @@ img.medium {
   width: 100%;
 }
 
+.img.large {
+  width: 100%;
+}
+
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
@@ -138,4 +166,13 @@ img.medium {
 
 .rating span:last-child {
   color: #404040;
+}
+
+/* Alert */
+.success {
+  color: #20a020;
+}
+
+.error {
+  color: #a02020;
 }
