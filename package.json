@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce-mern",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "--- e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenekmac/e-commerce-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irenekmac/e-commerce-website/issues"
+  },
+  "homepage": "https://github.com/irenekmac/e-commerce-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
