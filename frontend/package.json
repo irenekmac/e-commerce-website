@@ -41,6 +41,6 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "webpack": "^5.52.0"
+    "webpack": "^4.46.0"
   }
 }
