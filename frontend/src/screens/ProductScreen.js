@@ -1,4 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import data from './data';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
+import Rating from '../components/Rating';
 
 export default function ProductScreen() {
 
@@ -55,7 +60,6 @@ export default function ProductScreen() {
                     <span className="danger">Unavailable</span>
                     )}
                   </div>
-
                 </div>
               </li>
 
@@ -66,5 +70,7 @@ export default function ProductScreen() {
             </ul>
           </div>
         </div>
+      </div>
+
     </div>
   }
