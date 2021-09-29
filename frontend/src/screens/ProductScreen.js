@@ -1,20 +1,27 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { detailsProduct } from '../actions/productActions';
 import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import Rating from '../components/Rating';
-import data from '../data';
 
-export default function ProductScreen() {
-  const productDetails = useSelector( state => state.productDetails);
+export default function ProductScreen(props) {
+  const dispatch = useDispatch();
+  const productId = props.match.params.id;
+  const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
+
+  useEffect(() => {
+    dispatch(detailsProduct(productId));
+  }, [dispatch, productId]);
 
   return (
     <div>
-      {loading? (
+      {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
-        <MessageBox>{error}</MessageBox>
+        <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div>
           <Link to="/">Back to result</Link>
@@ -33,7 +40,7 @@ export default function ProductScreen() {
                 <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
                 </li>
 
-                <li>Price :${product.price}</li>
+                <li>Price : ${product.price}</li>
 
                 <li>
                 Description: <p>{product.description}</p>
@@ -56,7 +63,7 @@ export default function ProductScreen() {
                       <div>Status></div>
 
                       <div>
-                        ${product.countInStock > 0 ? (
+                        {product.countInStock > 0 ? (
                           <span className="success">In Stock</span>
                         ) : (
                         <span className="danger">Unavailable</span>
