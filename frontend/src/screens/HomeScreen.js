@@ -11,12 +11,12 @@ export default function HomeScreen() {
   const { loading, error, products } = productList;
 
   useEffect( () => {
-    dispatch(listProducts());
+    dispatch(listProducts({}));
   }, [dispatch]);
 
   return (
     <div>
-      {loading? (
+      {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox>{error}</MessageBox>
