@@ -1,10 +1,14 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 
 function App() {
+
+  const cart = useSelector(state => state.cart);
+  const { cartItems } = cart;
   return (
     <BrowserRouter>
 
@@ -12,12 +16,17 @@ function App() {
 
         <header className="row">
           <div className="">
-            <a className="brand" href="/">ShopMe</a>
+            <Link className="brand" to="/">ShopMe</Link>
           </div>
 
           <div className="">
-            <a href="/cart">Cart</a>
-            <a href="/signin">Sign-in</a>
+            <Link to="/cart">
+            Cart
+            {cartItems.length > 0 && (
+              <span className="badge">{cartItems.length}</span>
+            )}
+            </Link>
+            <Link to="/signin">Sign-in</Link>
           </div>
         </header>
 
