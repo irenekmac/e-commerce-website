@@ -87,7 +87,9 @@ export default function ProductScreen(props) {
                               {
                                 [...Array(product.countInStock).keys()].map(
                                 (x) => (
-                                  <option key={x + 1} value={x + 1}>{x + 1}</option>
+                                  <option key={x + 1} value={x + 1}>
+                                  {x + 1}
+                                  </option>
                                 )
                               )}
                             </select>
